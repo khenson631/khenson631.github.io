@@ -60,6 +60,8 @@ a:hover{
 
 .logo{
     font-size: 2rem;
+    color:blue;
+    font-weight:bold;
 }
 
 .logo:hover{
