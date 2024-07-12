@@ -35,7 +35,10 @@ nav,
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 15vh;
+    height: 9vh;
+    /* TODO: Pick a better color scheme for title bar? kinda like this one */
+    /* match footer? (different section) */
+    background-color:whitesmoke;
 }
 
 .nav-links{
