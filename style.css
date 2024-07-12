@@ -35,7 +35,7 @@ nav,
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
 }
 
 .nav-links{
@@ -55,7 +55,7 @@ a:hover{
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
-    /* text-shadow: lightslategrey 1px 1px 2px; */
+    letter-spacing: .1rem;
 }
 
 .logo{
@@ -163,20 +163,19 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 60vh;
+    height: 80vh;
 }
 
 .section__pic-container {
     display:flex;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: auto 0;
 }
 
 .section__text {
     align-self: center;
     text-align: center;
-
 }
 
 .section__text p {
@@ -185,13 +184,20 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    font-size: 1.5rem;
+    /* margin-bottom: 1rem; */
+}
+
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    /* font-style:italic; */
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
+    color:blue;
 }
 
 #socials-container {
@@ -223,35 +229,90 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color1, 
-.btn-color2 {
+.btn-color-1, 
+.btn-color-2 {
     border: rgb(53,53,53) 0.1rem solid;
 }
 
-.btn-color1:hover,
-.btn-color2:hover {
+/* .btn-color-1:hover,
+.btn-color-2:hover {
     cursor: pointer;
-}
+} */
 
-.btn-color1,
-.btn-color2:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
     cursor: pointer;
     background: rgb(53,53,53);
     color: white;
 }
 
-.btn-color1:hover {
+.btn-color-1:hover {
         background: rgb(0,0,0);
 }
 
-.btn-color2 {
+/* .btn-color-2 {
     background: none;
-}
+} */
 
-.btn-color2:hover {
+.btn-color-2:hover {
     border: rgb(255,255,255) 01.rem solid;
 }
 
 .btn-container {
     gap: 1rem;
 }
+
+/* About section */
+
+#about {
+    position:relative;
+}
+
+.about-containers {
+    gap:2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, 
+.about-details-container {
+    display: flex;
+}
+
+/* commented - not including another picture of myself here */
+/* .about-pic {
+    border-radius: 2rem;
+} */
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53);
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+/* commented - not including another picture of myself here */
+/* .section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+} */
