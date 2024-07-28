@@ -9,6 +9,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    /* TODO: Experiment with Background color
+    /* Will have to change color of text to lighter color for readability */
+    /* background-color:rgb(29, 27, 42) */
 }
 
 html {
@@ -45,6 +48,7 @@ nav{
     gap: 2rem;
     list-style:none;
     font-size: 1.5rem;
+    /* font-weight: bold; */
 }
 
 a {
@@ -62,9 +66,21 @@ a:hover{
 }
 
 .logo{
-    font-size: 2rem;
-    color:blue;
+    font-size: 1.5rem;
+    /* color:blue; */
+    /* color: rgb(0, 0, 0); */
+    /* color:white; */
+    color:black;
     font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* -webkit-text-stroke-color: black; */
+    /* -webkit-text-stroke-width: 1.5px; */
+    /* font-style: italic; */
+    border: 3px solid black;
+    /* border-spacing: 10px; */
+    border-collapse: separate;
+    padding: 3px;
+    /* padding-right: 8px; */
 }
 
 .logo:hover{
@@ -171,9 +187,14 @@ section {
 
 .section__pic-container {
     display:flex;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: auto 0;
+}
+
+img{
+    border-radius: 50%;
+    border
 }
 
 .section__text {
@@ -192,7 +213,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     /* font-style:italic; */
 }
@@ -200,7 +221,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color:blue;
+    color:black;
 }
 
 #socials-container {
@@ -265,16 +286,19 @@ section {
     gap: 1rem;
 }
 
+/* ************* */
 /* About section */
 
 #about {
     position:relative;
+    justify-content: center;
 }
 
 .about-containers {
     gap:2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .about-details-container {
@@ -299,18 +323,18 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53);
+    border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
 }
 
 .section-container {
-    gap: 4rem;
-    height: 80%;
+    /* gap: 4rem; */
+    /* height: 80%; */
 }
 
 /* commented - not including another picture of myself here */
