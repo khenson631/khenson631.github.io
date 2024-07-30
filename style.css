@@ -1,4 +1,6 @@
+/* ******** */
 /* GENERAL */
+/* ******** */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -11,7 +13,7 @@ body {
     font-family: "Poppins", sans-serif;
     /* TODO: Experiment with Background color
     /* Will have to change color of text to lighter color for readability */
-    /* background-color:rgb(29, 27, 42) */
+    background-color:whitesmoke;
 }
 
 html {
@@ -22,13 +24,17 @@ p {
     color: rgb(85, 85, 85)
 }
 
+/* ********** */
 /* TRANSITION */
+/* ********** */
 
 a, .btn{
     transition: all 300ms ease;
 }
 
+/* ************ */
 /* DESKTOP NAV */
+/* ************ */
 
 nav, 
 .nav-links{
@@ -38,10 +44,11 @@ nav,
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 9vh;
+    height: 12vh;
     /* TODO: Pick a better color scheme for title bar? kinda like this one */
     /* match footer? (different section) */
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
+    background-image: linear-gradient(whitesmoke,rgb(202, 194, 194));
 }
 
 .nav-links{
@@ -54,14 +61,14 @@ nav{
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color: white;
+    /* text-decoration-color: white; */
 }
 
 a:hover{
-    color: grey;
+    /* color: rgb(179, 175, 175); */
     text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-underline-offset: .5rem;
+    /* text-decoration-color: rgb(181, 181, 181); */
     letter-spacing: .1rem;
 }
 
@@ -87,7 +94,9 @@ a:hover{
     cursor: default;
 }
 
+/* *************************** */
 /* HAMBURGER MENU - for mobile */
+/* *************************** */
 
 #hamburger-nav{
     display: none;
@@ -163,7 +172,9 @@ a:hover{
     opacity: 1;
 }
 
+/* ********* */
 /* SECTIONS */
+/* ********* */
 
 section {
     padding-top:4vh;
@@ -177,7 +188,10 @@ section {
     display: flex;
 }
 
+/* *************** */
 /* Profile Section */
+/* *************** */
+
 #profile {
     display: flex;
     justify-content: center;
@@ -194,7 +208,6 @@ section {
 
 img{
     border-radius: 50%;
-    border
 }
 
 .section__text {
@@ -231,13 +244,18 @@ img{
     gap: 1rem;
 }
 
+/* ***** */
 /* ICONS */
+/* ***** */
+
 .icon {
     cursor: pointer;
     height: 2rem;
 }    
 
+/* ******** */
 /* BUTTONS */
+/* ******** */
 
 .btn-container {
     display: flex;
@@ -288,6 +306,7 @@ img{
 
 /* ************* */
 /* About section */
+/* ************* */
 
 #about {
     position:relative;
@@ -343,3 +362,45 @@ img{
     width: 400px;
     margin: auto 0;
 } */
+
+
+/* ************* */
+/* Experience section */
+/* ************* */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.article-icon {
+    cursor:default;
+}

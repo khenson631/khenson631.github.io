@@ -1,0 +1,21 @@
+TODO: 
+
+https://www.youtube.com/watch?v=ldwlOzRvYOU <---- This is the video I am following to code the site. 
+
+-finish overall portfolio coding
+
+-center image in About section
+
+-center About Me details - seems off? But not 100% sure..
+
+-Update About Me description text
+
+-Update Experience: skills listing
+
+
+STYLING
+-Update styling to fit my own personal vision
+	-dark background + light text?
+	-Make it more asthetic overall
+
+-Dark/Light them switch
