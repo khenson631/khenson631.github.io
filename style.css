@@ -44,7 +44,7 @@ nav,
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 12vh;
+    height: 6vh;
     /* TODO: Pick a better color scheme for title bar? kinda like this one */
     /* match footer? (different section) */
     /* background-color:whitesmoke; */
@@ -62,15 +62,39 @@ a {
     color: black;
     text-decoration: none;
     /* text-decoration-color: white; */
+    position: relative;
+    padding-bottom: 4px; /* The distance between text and underline */
+
 }
 
 a:hover{
-    /* color: rgb(179, 175, 175); */
-    text-decoration: underline;
-    text-underline-offset: .5rem;
+    color: rgb(94, 92, 92);
+    /* text-decoration: underline; */
+    /*     text-decoration: none;
+    position: relative;
+    padding-bottom: 4px; /* The distance between text and underline */
+    /* text-underline-offset: .5rem; */
+    
     /* text-decoration-color: rgb(181, 181, 181); */
-    letter-spacing: .1rem;
+    /* letter-spacing: .1rem; */
 }
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, rgb(94, 92, 92), rgb(94, 92, 92)); /* underline color */
+    background-size: 0 2px; /* vertical size of underline */
+    background-repeat: no-repeat;
+    background-position: left bottom; /* start position of underline */
+    transition: background-size .3s ease-in; /* duration and timing style of animation */
+  }
+  
+  a:hover::before {
+    background-size: 100% 2px;
+  }
 
 .logo{
     font-size: 1.5rem;
@@ -221,7 +245,7 @@ img{
 
 .section__text__p1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* margin-bottom: 1rem; */
 }
 
@@ -403,4 +427,84 @@ article {
 
 .article-icon {
     cursor:default;
+}
+
+/* **************** */
+/* PROJECTS SECTION */
+/* **************** */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163,163,163);
+    background: rgb(255,255,255);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163,163,163);
+}
+
+/* *************** */
+/* CONTACT SECTION */
+/* *************** */
+
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 20px;
 }

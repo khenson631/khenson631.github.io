@@ -46,7 +46,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Kyle Henson</h1>
-            <p class="section__text__p2">Developer / Designer</p>
+            <p class="section__text__p2">Developer + Designer</p>
             <div class="btn-container">
                 <button 
                  class="btn btn-color-2"
@@ -94,7 +94,15 @@
                         class="icon"
                     />                                  
                     <h3>Experience</h3>
-                        <p>2+ years Data Conversion Specialist</p>                        
+                        <p>Working in software industry since 2017<br>
+                            6+ years coding experience<br>
+                            2+ years Data Conversion Specialist<br>                            
+                        </p>                        
+                        <!-- <ul>
+                            <li>Working in software industry since 2017</li>
+                            <li>6+ years coding experience</li>
+                            <li>2+ years Data Conversion Specialist</li>
+                        </ul>                         -->
                 </div>                  
                     <div class="details-container">
                         <img
@@ -108,9 +116,10 @@
                 </div> 
                     <div class="text-container">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Hic quis reprehenderit et laborum, rem, dolore eum quod voluptate exercitationem nobis, 
-                            nihil esse debitis maxime facere minus sint delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!
+                            My name is Kyle Henson and I am currently working as a Data Conversion Specialist
+                             at MDS Property Management Software. I also design and program tailored custom financial reports for our clients. 
+                             I am currently learning frontend web developement and aiming to apply my unique design vision to make 
+                             beautiful and responsive websites.
                         </p>
                     </div>
                 </div>
@@ -222,6 +231,113 @@
             />
         </section>
    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-1.png"
+                            alt="Project1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        Live Demo
+                        </button>
+                    </div>
+            </div>
+            <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-2.png"
+                            alt="Project2"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        Live Demo
+                        </button>
+                    </div>
+        
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-3.png"
+                            alt="Project3"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        GitHub
+                        </button>
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                        Live Demo
+                        </button>
+                    </div>
+            </div>
+        </div>
+
+        <img 
+        src="assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./experience'"
+        />
+    
+    </section>    
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me></h1>
+        
+        <div class="contact-container">
+            <form id="contact-form" method="post" action="contact-form-handler.php">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="phone" placeholder="Phone No." required>
+                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+
+            </form>
+        </div>
+
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
