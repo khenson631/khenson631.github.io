@@ -129,7 +129,7 @@
             src="assets/arrow.png" 
             alt="Arrow icon" 
             class="icon arrow"
-            onclick="location.href='./experience'"
+            onclick="location.href='./#experience'"
         />
     </section>
     
@@ -227,7 +227,7 @@
                 src="assets/arrow.png" 
                 alt="Arrow icon" 
                 class="icon arrow"
-                onclick="location.href='./experience'"
+                onclick="location.href='./#projects'"
             />
         </section>
    
@@ -315,17 +315,20 @@
         src="assets/arrow.png" 
         alt="Arrow icon" 
         class="icon arrow"
-        onclick="location.href='./experience'"
+        onclick="location.href='./#contact'"
         />
     
     </section>    
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
+        <!-- <p class="section__text__p1">Get in Touch</p> -->
         <h1 class="title">Contact Me></h1>
         
         <div class="contact-container">
-            <form id="contact-form" method="post" action="contact-form-handler.php">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="723150c5-b16d-4edd-b962-478e18fc7242">
+
                 <h3>GET IN TOUCH</h3>
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Email Address" required>
@@ -335,8 +338,21 @@
 
             </form>
         </div>
-
     </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; <script>document.write( new Date().getFullYear() );</script> Kyle Henson. All Rights Reserved</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
