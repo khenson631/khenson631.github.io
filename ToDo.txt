@@ -4,13 +4,11 @@ https://www.youtube.com/watch?v=ldwlOzRvYOU <---- This is the video I am followi
 
 -finish overall portfolio coding
 
--center image in About section
-
 -center About Me details - seems off? But not 100% sure..
 
 -Update About Me description text
 
--Update Experience: skills listing
+-Update Experience: skills listing (currently set to languages from video)
 
 
 STYLING

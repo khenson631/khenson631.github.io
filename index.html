@@ -326,17 +326,28 @@
         
         <div class="contact-container">
             <form action="https://api.web3forms.com/submit" method="POST">
-                <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="723150c5-b16d-4edd-b962-478e18fc7242">
+                <!-- Line below contains my unique web3forms access key -->
+                <input type="hidden" name="access_key" value="723150c5-b16d-4edd-b962-478e18fc7242">
 
                 <h3>GET IN TOUCH</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-                <input type="text" id="phone" placeholder="Phone No." required>
-                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone No.">
+                <textarea id="message" rows="4" name="message" placeholder="How can I help you?"></textarea>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <!-- hCaptcha for advanced spam protection -->
+                <div class="h-captcha" data-captcha="true"></div>
+
                 <button type="submit">Send</button>
 
             </form>
+            
+            <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+       
         </div>
     </section>
 
