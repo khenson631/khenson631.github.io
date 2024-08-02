@@ -1,19 +1,20 @@
 TODO: 
 
-https://www.youtube.com/watch?v=ldwlOzRvYOU <---- This is the video I am following to code the site. 
-
--finish overall portfolio coding
-
--center About Me details - seems off? But not 100% sure..
-
--Update About Me description text
-
 -Update Experience: skills listing (currently set to languages from video)
 
+-Fix footer overlapping on mobile size
 
-STYLING
 -Update styling to fit my own personal vision
-	-dark background + light text?
-	-Make it more asthetic overall
+	-dark blue background + light text
+		https://colorhunt.co/palette/02152603346e6eacdae2e2b6
+	-color Contact Form with rest of theme
+	
+-fit "profile" and about me into one section
+-condense rest of content so not so spaced out on page
+-make it look cooler overall
 
 -Dark/Light them switch
+
+-"sticky" header (stays at top when scrolling)
+
+-redesign footer (include social media link icons with links)
