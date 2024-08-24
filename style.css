@@ -401,24 +401,20 @@ img{
     height: 80%;
 }
 
-/* commented - not including another picture of myself here */
-/* .section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-} */
+.text-container {
+    text-align: center;
+}
 
 
 /* ************* */
 /* Experience section */
 /* ************* */
 
-#experience {
+/* #experience {
     position: relative;
 }
 
 .experience-sub-title {
-    /* color: rgb(85, 85, 85); */
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -448,7 +444,7 @@ article {
 
 .article-icon {
     cursor:default;
-}
+} */
 
 /* **************** */
 /* PROJECTS SECTION */
