@@ -47,15 +47,48 @@
         margin: 0 5%;
     }
 
-    .section-pic-container{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-
     .about-containers {
         margin-top: 0;
     }
+    
+    /* .section-pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+
+    } */
+
+    #profile {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the items */
+        justify-content: center; /* Center the content along the main axis */
+        gap: 1rem; /* Adjust gap between items */
+    }
+
+    .section__pic-container {
+        order: -1; /* Move the picture container above the text */
+        width: 80%; /* Adjust the image size for mobile */
+        height: auto; /* Maintain aspect ratio */
+        display: flex; /* Ensure it behaves as a flex container */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__pic-container img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 300px;
+        border-radius: 50%; /* Keep the circular shape */
+    }
+
+    .section__text {
+        order: 1; /* Ensure the text container stays below the picture */
+        text-align: center;
+    }
+
+    
 }
 
 @media screen and (max-width: 600px) {
