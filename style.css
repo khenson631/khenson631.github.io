@@ -10,18 +10,20 @@
 }
 
 :root {
+    /* These vars to be used for color schemes. Always refer to the vars instead of individual color codes */
     --yellow: #E2E2B6;
     --light-blue: #a4c9e6;
-    --dark-blue: #021526;
+    --dark-blue: #021526;    
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    /* TODO: Experiment with Background color
-    /* Will have to change color of text to lighter color for readability */
-    /* background-color:whitesmoke; */
+    font-family: "Poppins", sans-serif;    
     background: var(--dark-blue);
-    /* padding-top: 10vh; */
+    
+    /* background-image: radial-gradient(rgb(81, 39, 93) 1px, transparent 0); */
+    background-image: radial-gradient(#1d1c5b 1px, transparent 0);
+    background-size: 33px 33px;
+    background-position: -19px -19px;
 }
 
 html {
@@ -50,6 +52,9 @@ h3 {
 
 #desktop-nav {
     /* background-image: linear-gradient(whitesmoke,rgb(202, 194, 194)); */
+    border-bottom: var(--light-blue);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 /* ********** */
@@ -72,7 +77,8 @@ a, .btn{
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 10vh;
+    /* height: 10vh; */
+    height: 8vh;
     display: flex;
     
     /* position: fixed; */
@@ -313,9 +319,7 @@ img{
 /* ***** */
 
 .icon {
-    /* cursor: pointer; */
     height: 2rem;
-    /* opacity: .75; */
 }    
 
 .socials-icon {
@@ -399,28 +403,23 @@ img{
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-    
+    opacity: .5;
 }
 
 .arrow:hover {
     color: var(--yellow);
+    opacity: 1;
 }
 
 .details-container {
     padding: 1rem;
     flex: 1;
-    /* background: white;     */
-    /* background: #E2E2B6; */
-    /* background-colo */
     border-radius: 2rem;
-    /* border: rgb(53,53,53) 0.1rem solid; */
     border:var(--light-blue) 0.1rem solid;
-   
     text-align: center;
 }
 
 .section-container {
-    /* margin-top: 2rem; */
     gap: 4rem;
     height: 80%;
 }
@@ -479,8 +478,6 @@ article {
 }
 
 .color-container {
-    /* border-color: rgb(163,163,163); */
-    /* background: rgb(255,255,255); */
     background: transparent;
 }
 
@@ -516,8 +513,7 @@ article {
     width: auto;
     max-width: 300px;
     height: auto;
-    margin-bottom: 2rem;
-    opacity: 0.8; /* Optional: Slight transparency */
+    margin-bottom: 2rem;    
 }
 
 .under-construction h2 {
