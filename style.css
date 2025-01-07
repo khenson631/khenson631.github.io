@@ -19,8 +19,6 @@
 body {
     font-family: "Poppins", sans-serif;    
     background: var(--dark-blue);
-    
-    /* background-image: radial-gradient(rgb(81, 39, 93) 1px, transparent 0); */
     background-image: radial-gradient(#1d1c5b 1px, transparent 0);
     background-size: 33px 33px;
     background-position: -19px -19px;
@@ -77,15 +75,11 @@ a, .btn{
 nav{
     justify-content:space-around;
     align-items: center;
-    /* height: 10vh; */
     height: 8vh;
     display: flex;
-    
-    /* position: fixed; */
     position: sticky;
     top: 0;
     z-index: 999;
-    
     opacity: 1;
     background-color: var(--dark-blue);
 }
@@ -98,7 +92,6 @@ nav{
 }
 
 a {
-    /* color: black; */
     color: var(--light-blue);
     text-decoration: none;
     position: relative;
@@ -107,7 +100,6 @@ a {
 }
 
 a:hover{
-    /* color: rgb(94, 92, 92); */
     color: var(--yellow);
 }
 
@@ -130,11 +122,9 @@ a::before {
 
 .logo{
     font-size: 1.5rem;
-    /* color:black; */
     color: var(--light-blue);
     font-weight:bold;
     font-family: Arial, Helvetica, sans-serif;
-    /* border: 3px solid black; */
     border: 3px solid var(--light-blue);
     border-collapse: separate;
     padding: 3px;
@@ -359,7 +349,6 @@ img{
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
-    /* background: rgb(53,53,53); */
     background: black;
     color: var(--yellow);
 }
