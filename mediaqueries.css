@@ -17,6 +17,38 @@
     }
 }
 
+@media screen and (max-width: 1399px){
+    #profile {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the items */
+        justify-content: center; /* Center the content along the main axis */
+        gap: 1rem; /* Adjust gap between items */
+    }
+
+    .section__pic-container {
+        order: -1;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__pic-container img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        border-radius: 50%;
+    }
+
+    .section__text {
+        order: 1; /* Ensure the text container stays below the picture */
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1200px){
     
     #desktop-nav{
@@ -66,21 +98,21 @@
     }
 
     .section__pic-container {
-        order: -1; /* Move the picture container above the text */
-        width: 80%; /* Adjust the image size for mobile */
-        height: auto; /* Maintain aspect ratio */
-        display: flex; /* Ensure it behaves as a flex container */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        order: -1;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     .section__pic-container img {
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
         max-width: 300px;
-        border-radius: 50%; /* Keep the circular shape */
+        border-radius: 50%;
     }
 
     .section__text {
@@ -88,6 +120,9 @@
         text-align: center;
     }
 
+    /* .contact-container{
+        margin-top:2rem;
+    } */
     
 }
 
@@ -121,8 +156,9 @@
     }
 
     .contact-container{
-        margin:0;
+        /* margin:0; */
         flex-wrap: wrap;
+        /* padding-bottom: 2rem; */
     }
     
     .contact-container p,
@@ -160,5 +196,13 @@
 
     .text-container{
         text-align: justify;
+    }
+}
+
+/* iPhone SE sizing */
+@media screen and (max-width: 375px) {
+    
+    .contact-container{
+        padding-bottom: 3rem;
     }
 }
