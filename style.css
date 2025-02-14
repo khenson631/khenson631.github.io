@@ -72,7 +72,7 @@ a, .btn{
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 8vh;
+    height: 5vh;
     display: flex;
     position: sticky;
     top: 0;
@@ -225,7 +225,7 @@ a::before {
 /* ********* */
 
 section {
-    padding-top: 10vh;
+    padding-top: 5vh;
     height: fit-content;
     margin-top: 10vh;
     margin: 0 10rem;
@@ -244,7 +244,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
 }
 
 .section__pic-container {
@@ -369,11 +369,15 @@ img{
     justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
+    box-sizing: border-box;
+    width: 85vw;    
 }
 
 .about-containers, 
 .about-details-container {
     display: flex;
+    justify-self: center;
+    width: 85vw;
 }
 
 .arrow {
