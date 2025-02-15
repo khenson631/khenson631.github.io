@@ -72,7 +72,7 @@ a, .btn{
 nav{
     justify-content:space-around;
     align-items: center;
-    height: 5vh;
+    height: 8vh;
     display: flex;
     position: sticky;
     top: 0;
@@ -141,11 +141,9 @@ a::before {
 }
 
 .hamburger-menu {
-    /* position: relative; */
     position: sticky;
     display: inline-block;
     z-index: 20; /* Ensure the hamburger icon stays on top */
-
     opacity: 1;
     background-color: var(--dark-blue);
 }
@@ -513,29 +511,27 @@ article {
 /* *************** */
 
 #contact{
-    position: relative;
+    /* position: relative; */
 }
 
 .contact-container{
     width: 100%;
     height: 50vh;
+    min-height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    /* margin-top: 2rem; */
-    /* padding-top: 2rem; */
 }
 
 form{
-    /* background: #fff; */
     background-color: var(--dark-blue);
     display: flex;
     flex-direction: column;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    margin: auto;
+    margin: 2rem;
 }
 
 form h3{
@@ -571,10 +567,8 @@ form button{
 /* ************** */
 
 footer{
-    height: 10vh;
-    margin: 0 1rem;
     margin-top: 10rem;
-    position: static;
+    position: relative;
     margin-bottom: 3rem;
 }
 
