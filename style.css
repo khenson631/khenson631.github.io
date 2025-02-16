@@ -30,6 +30,7 @@ html {
 
 p {
     color: var(--light-blue);
+    text-align: center;
 }
 
 h1 {
@@ -149,7 +150,6 @@ a::before {
 }
 
 .hamburger-icon{    
-    /* position: sticky; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,6 +275,7 @@ img{
 .section__text__p2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .title {
