@@ -10,355 +10,362 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">KYLE HENSON</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <!-- <li><a href="#experience">Experience</a></li> Commenting for now - Will revisit Experience section later -->
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <nav id="hamburger-nav">
-        <div class="logo">KYLE HENSON</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="main-container">
+        <nav id="desktop-nav">
+            <div class="logo">KYLE HENSON</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> Commenting for now - Will revisit Experience section later -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> Commenting for now - Will revisit Experience section later -->
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>             
-        </div>
-    </nav>
-    
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Headshot.png" alt="Kyle Henson profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Kyle Henson</h1>
-            <p class="section__text__p2">Develop. Design. Code.</p>
-            <div class="btn-container">
-                <button 
-                 class="btn btn-color-2"
-                 onclick="window.open('./assets/Kyle Henson Resume.pdf')">
-                 Download Resume
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img                    
-                    src="./assets/linkedinblue.png"
-                    alt="My LinkedIn profile"
-                    class="socials-icon"
-                    onclick="location.href='https://www.linkedin.com/in/kyle-henson-740b37b5/'"
-                >
-                <img
-                    src="./assets/github_blue.png"
-                    alt="My GitHub profile"
-                    class="socials-icon"
-                    onclick="location.href='https://github.com/khenson631'"
-                >
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h1 class="title">About Me</h1>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                    <img 
-                        src="./assets/experience_blue.png" 
-                        alt="Experience icon"
-                        class="icon"
-                    >                                  
-                    <h3>Experience</h3>
-                        <p>Working in software industry since 2017<br>
-                            5+ years coding experience<br>
-                            2+ years Data Conversion Specialist (Extract, Transform, Load)<br>                            
-                        </p>                        
-                </div>                  
-                    
-                <div class="details-container">
-                    <img
-                        src="./assets/education_blue.png"
-                        alt="Education icon"
-                        class="icon"
-                    >
-                    <h3>Education</h3>
-                    <p>Bachelors Degree, Baruch College (2017)</p>                        
+        </nav>
+    </div>
+    <div class="main-container">
+        <nav id="hamburger-nav">
+            <div class="logo">KYLE HENSON</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                
-                </div> 
-                    <div class="text-container">
-                        <p>
-                            My name is Kyle Henson and I am currently working as a Data Conversion Specialist
-                             at MDS Property Management Software. My role uses Extract, Transform, and Load (ETL) procedures to convert client's data into our system.
-                             <br><br> I also design and program tailored custom financial reports for our clients.
-                             I am currently learning frontend developement and aiming to apply my unique design vision to make 
-                             beautiful and responsive websites.
-                        </p>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> Commenting for now - Will revisit Experience section later -->
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>             
+            </div>
+        </nav>
+    </div>
+    <main class="main-container">
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/Headshot.png" alt="Kyle Henson profile picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Kyle Henson</h1>
+                <p class="section__text__p2">Develop. Design. Code.</p>
+                <div class="btn-container">
+                    <button 
+                     class="btn btn-color-2"
+                     onclick="window.open('./assets/Kyle Henson Resume.pdf')">
+                     Download Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img                    
+                        src="./assets/linkedinblue.png"
+                        alt="My LinkedIn profile"
+                        class="socials-icon"
+                        onclick="location.href='https://www.linkedin.com/in/kyle-henson-740b37b5/'"
+                    >
+                    <img
+                        src="./assets/github_blue.png"
+                        alt="My GitHub profile"
+                        class="socials-icon"
+                        onclick="location.href='https://github.com/khenson631'"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="title">About Me</h1>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                        <img 
+                            src="./assets/experience_blue.png" 
+                            alt="Experience icon"
+                            class="icon"
+                        >                                  
+                        <h3>Experience</h3>
+                            <p>Working in software industry since 2017<br>
+                                5+ years coding experience<br>
+                                2+ years Data Conversion Specialist (Extract, Transform, Load)<br>                            
+                            </p>                        
+                    </div>                  
+                        
+                    <div class="details-container">
+                        <img
+                            src="./assets/education_blue.png"
+                            alt="Education icon"
+                            class="icon"
+                        >
+                        <h3>Education</h3>
+                        <p>Bachelors Degree, Baruch College (2017)</p>                        
+                    </div>
+                    
+                    </div> 
+                        <div class="text-container">
+                            <p>
+                                My name is Kyle Henson and I am currently working as a Data Conversion Specialist
+                                 at MDS Property Management Software. My role uses Extract, Transform, and Load (ETL) procedures to convert client's data into our system.
+                                 <br><br> I also design and program tailored custom financial reports for our clients.
+                                 I am currently learning frontend developement and aiming to apply my unique design vision to make 
+                                 beautiful and responsive websites.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        <img 
-            src="assets/arrow_blue.png" 
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#projects'"
-        >
-    </section>
-    
-    <!-- <section id="experience">
-        <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Frontend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>SASS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>TypeScript</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>Visual Basic</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>                
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Backend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>PostgresSQL</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>Node JS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
-                                />
-                                <div>
-                                    <h3>Git</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>                      
-                            </article>
-                        </div>
-                    </div>                
-                </div>
-            </div>
             <img 
                 src="assets/arrow_blue.png" 
                 alt="Arrow icon" 
                 class="icon arrow"
                 onclick="location.href='./#projects'"
-            />
-        </section> -->
-   
-    <section id="projects">
-        <!-- <p class="section__text__p1">Browse My Recent</p> Will revisit projects section once I have more to show -->
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    
-                    <!-- <div class="under-construction">
-                        <img 
-                            src="./assets/construction-set-icons/UnderConstruction.jpg" 
-                            alt="Under Construction" 
-                            class="under-construction-img"
-                        >
-                        <h2>Projects Section Under Construction</h2>
-                        <p>Check back soon!</p>
-                    </div> -->
-
+            >
+        </section>
+        
+        <!-- <section id="experience">
+            <h1 class="title">Experience</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Frontend Development</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                    />
+                                    <div>
+                                        <h3>HTML</h3>
+                                        <p>Experienced</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                    />
+                                    <div>
+                                        <h3>CSS</h3>
+                                        <p>Experienced</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                    />
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>SASS</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>JavaScript</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>TypeScript</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>Visual Basic</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>                
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Backend Development</h2>
+                                <div class="article-container">
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>PostgresSQL</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>Node JS</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark_blue.png" alt="Experience icon" class="icon"
+                                        />
+                                        <div>
+                                            <h3>Git</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>                      
+                                    </article>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
                     <img 
-                        src="./assets/BuyOrSell.png"
-                        alt="Buy or Sell App"
-                        class="buyOrSellImg"
-                    >
-                    <h2><a href="https://khenson631.github.io/peppercorn-frontend/" target="_blank">BuyOrSell</a></h2>
-                    <p>A stock market application that provides a quick buy, sell, or hold recommendation. 
-                        (Note: This app is purely informational and does not constitute financial, 
-                        investment, legal, or other professional advice).</p>
+                        src="assets/arrow_blue.png" 
+                        alt="Arrow icon" 
+                        class="icon arrow"
+                        onclick="location.href='./#projects'"
+                    />
+                </section> -->
+       
+        <section id="projects">
+            <!-- <p class="section__text__p1">Browse My Recent</p> Will revisit projects section once I have more to show -->
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        
+                        <!-- <div class="under-construction">
+                            <img 
+                                src="./assets/construction-set-icons/UnderConstruction.jpg" 
+                                alt="Under Construction" 
+                                class="under-construction-img"
+                            >
+                            <h2>Projects Section Under Construction</h2>
+                            <p>Check back soon!</p>
+                        </div> -->
 
-                </div> 
-               
-                    <!-- <div class="article-container">
-                        <img
-                            src="./assets/project-1.png"
-                            alt="Project1"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
+                        <img 
+                            src="./assets/BuyOrSell.png"
+                            alt="Buy or Sell App"
+                            class="buyOrSellImg"
                         >
-                        GitHub
-                        </button>
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                        >
-                        Live Demo
-                        </button>
+                        <h2><a href="https://khenson631.github.io/peppercorn-frontend/" target="_blank">BuyOrSell</a></h2>
+                        <p>A stock market application that provides a quick buy, sell, or hold recommendation. 
+                            (Note: This app is purely informational and does not constitute financial, 
+                            investment, legal, or other professional advice).</p>
+
+                    </div> 
+                   
+                        <!-- <div class="article-container">
+                            <img
+                                src="./assets/project-1.png"
+                                alt="Project1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            GitHub
+                            </button>
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            Live Demo
+                            </button>
+                        </div>
                     </div>
-                </div>
-            <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/project-2.png"
-                            alt="Project2"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                        >
-                        GitHub
-                        </button>
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                        >
-                        Live Demo
-                        </button>
-                    </div>
-        
-                </div>
                 <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                            src="./assets/project-3.png"
-                            alt="Project3"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                        >
-                        GitHub
-                        </button>
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                        >
-                        Live Demo
-                        </button>
-                    </div> -->
-            </div>
-        </div>
-
-        <img 
-        src="assets/arrow_blue.png" 
-        alt="Arrow icon" 
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        >
-    
-    </section>    
-
-    <section id="contact">
-        <h1 class="title">Contact Me</h1>
-        
-        <div class="contact-container">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <!-- Line below contains my unique web3forms access key -->
-                <input type="hidden" name="access_key" value="723150c5-b16d-4edd-b962-478e18fc7242">
-
-                <!-- <h3>GET IN TOUCH</h3> -->
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Email Address" required>
-                <input type="text" id="phone" name="phone" placeholder="Phone No.">
-                <textarea id="message" rows="4" name="message" placeholder="How can I help you?"></textarea>
-
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <!-- hCaptcha for advanced spam protection -->
-                <div class="h-captcha" data-captcha="true"></div>
-
-                <button type="submit">Send</button>
-
-            </form>
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-2.png"
+                                alt="Project2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            GitHub
+                            </button>
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            Live Demo
+                            </button>
+                        </div>
             
-            <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
-            <script src="https://web3forms.com/client/script.js" async defer></script>       
-        </div>
-    </section>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-3.png"
+                                alt="Project3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Three</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            GitHub
+                            </button>
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'"
+                            >
+                            Live Demo
+                            </button>
+                        </div> -->
+                </div>
+            </div>
+
+            <img 
+            src="assets/arrow_blue.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+            >
+        
+        </section>    
+
+        <section id="contact">
+            <h1 class="title">Contact Me</h1>
+            
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Line below contains my unique web3forms access key -->
+                    <input type="hidden" name="access_key" value="723150c5-b16d-4edd-b962-478e18fc7242">
+
+                    <!-- <h3>GET IN TOUCH</h3> -->
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone No.">
+                    <textarea id="message" rows="4" name="message" placeholder="How can I help you?"></textarea>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <!-- hCaptcha for advanced spam protection -->
+                    <div class="h-captcha" data-captcha="true"></div>
+
+                    <button type="submit">Send</button>
+
+                </form>
+                
+                <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
+                <script src="https://web3forms.com/client/script.js" async defer></script>       
+            </div>
+        </section>
+    </main>
 
     <footer>
         <nav>
