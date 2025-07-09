@@ -24,10 +24,12 @@ body {
     background-position: -19px -19px;
 }
 
-.content-container {
-    width: 75%;
-    height: 100%;
-    /* background-color: var(--dark-blue); */
+/* Main container for slimmer, centered layout */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 html {
@@ -53,11 +55,11 @@ h3 {
     color: var(--yellow);
 }
 
-#desktop-nav {
+/* #desktop-nav {
     border-bottom: var(--light-blue);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-}
+} */
 
 /* ********** */
 /* TRANSITION */
@@ -70,11 +72,6 @@ a, .btn{
 /* ************ */
 /* DESKTOP NAV */
 /* ************ */
-
-/* nav, 
-.nav-links{
-    display: flex;
-} */
 
 nav{
     justify-content:space-around;
@@ -232,7 +229,7 @@ section {
     padding-top: 5vh;
     height: fit-content;
     margin-top: 10vh;
-    margin: 0 10rem;
+    margin: 0; /* Remove the 10rem margin since we're using the container now */
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -375,14 +372,14 @@ img{
     flex-direction: column;
     margin-top: 2rem;
     box-sizing: border-box;
-    width: 85vw;    
+    width: 100%; /* Changed from 85vw to 100% since we're using container */
 }
 
 .about-containers, 
 .about-details-container {
     display: flex;
     justify-self: center;
-    width: 85vw;
+    width: 100%; /* Changed from 85vw to 100% since we're using container */
 }
 
 .arrow {
