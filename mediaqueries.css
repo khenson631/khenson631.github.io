@@ -75,8 +75,9 @@
         height:fit-content;
     }
     
-    section{
-        margin: 0 5%;
+    /* Update main container padding for medium screens */
+    .main-container {
+        padding: 0 1.5rem;
     }
 
     .about-containers {
@@ -130,6 +131,11 @@
     /* #contact{
         height: 40vh;
     } */
+
+    /* Update main container padding for mobile screens */
+    .main-container {
+        padding: 0 1rem;
+    }
 
     footer {
         height: 40vh;
