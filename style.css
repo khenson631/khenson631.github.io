@@ -32,12 +32,6 @@ body {
     box-sizing: border-box;
 }
 
-.content-container {
-    width: 75%;
-    height: 100%;
-    /* background-color: var(--dark-blue); */
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -497,11 +491,17 @@ article {
     justify-content: center;
 }
 
-.under-construction-img {
+/* .under-construction-img {
     width: auto;
     max-width: 300px;
     height: auto;
     margin-bottom: 2rem;    
+} */
+
+.buyOrSellImg {
+    border-radius: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .under-construction h2 {
